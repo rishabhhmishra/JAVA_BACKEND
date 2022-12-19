@@ -1,0 +1,26 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <servlet>
+        <servlet-name>EmployeeApp</servlet-name>
+        <servlet-class>com.rxbh.controller.EmployeeApp</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmployeeApp</servlet-name>
+        <url-pattern>/EmployeeApp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowEmployee</servlet-name>
+        <servlet-class>com.rxbh.controller.ShowEmployee</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowEmployee</servlet-name>
+        <url-pattern>/ShowEmployee</url-pattern>
+    </servlet-mapping>
+       <!--welcome page if you want to rename index.html/jsp-->
+</web-app>
