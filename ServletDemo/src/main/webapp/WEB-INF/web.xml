@@ -1,0 +1,21 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <servlet>
+        <servlet-name>PrintName</servlet-name>
+        <servlet-class>com.rxbh.controller.PrintName</servlet-class>
+
+        <init-param>
+            <param-name>input</param-name>
+            <param-value>Rishabh</param-value>
+        </init-param>
+        <!-- <load-on-startup>1</load-on-startup>-->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PrintName</servlet-name>
+        <url-pattern>/printname</url-pattern>
+    </servlet-mapping>
+       <!--welcome page if you want to rename index.html/jsp-->
+</web-app>
