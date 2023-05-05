@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MMM-dd HH:mm:ss a} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+        <File name="FILE" fileName="C:\Users\rishabh.mishra\IdeaProjects\Maker-CheckerV4\src\LogDetails.log" append="false">
+            <PatternLayout pattern="%-5p | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console" level="warn"/>
+            <AppenderRef ref="FILE" level="info" />
+        </Root>
+        <Logger name="com.services" level="info"/>
+    </Loggers>
+</Configuration>
